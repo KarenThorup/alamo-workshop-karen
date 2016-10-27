@@ -5,4 +5,4 @@ COPY . /
 RUN gradle-1.12/bin/gradle build
 RUN pwd
 RUN ls
-CMD java -jar /build/libs/karen3-0.0.1-SNAPSHOT.jar
+CMD java -jar /build/libs/karen3-0.0.1-SNAPSHOT.jar --server.port=$PORT
